@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 // const { JsonStreamStringify } = require('json-stream-stringify');
 const generateMockData = require('./data.js');
-const splitAndStringify = require('./test.js');
+const splitAndStringify = require('./split.js');
 
 app.get('/stream', (req, res) => {
   res.type('json'); // Required for proper handling by test frameworks and some clients
